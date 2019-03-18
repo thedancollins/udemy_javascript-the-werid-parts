@@ -1,0 +1,11 @@
+var person = new Object();
+person["firstname"] = 'Dan';
+var ln = "lastname";
+person[ln] = 'collins';
+console.log(person);
+person.address = new Object();
+person.address.street = "123 Fake Street";
+person.address.city = "texas";
+console.log(person.address);
+console.log(person["address"]["state"]);
+console.log(person["address"]["city"]);
