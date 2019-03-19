@@ -15,3 +15,12 @@ var a = 3;
 var b = new Number(3);
 console.log("a == b: " + (a == b));
 console.log("a === b: " + (a === b));
+
+//Video 62
+Array.prototype.myCustomFeature = 'Cool';
+var arr = ['John', 'Jane', 'Jim'];
+
+//dop not use "for in" with arrays
+for (var prop in arr) {
+    console.log(prop + ": " + arr[prop]);
+}
