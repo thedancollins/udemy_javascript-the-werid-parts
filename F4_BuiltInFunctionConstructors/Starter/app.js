@@ -9,3 +9,9 @@ Number.prototype.isPositive = function () {
 //3.isPositive(); throws an error because 3 is not automatically "boxed" by the parser
 var a = new Number(3);
 console.log(a.isPositive());
+
+//WARNING
+var a = 3;
+var b = new Number(3);
+console.log("a == b: " + (a == b));
+console.log("a === b: " + (a === b));
